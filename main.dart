@@ -50,4 +50,15 @@ void main(List<String> args) {
   print('Ordena el arreglo de menor a mayor');
   numbers.sort();
   print(numbers);
+  print('Convertir la lista en un set');
+  numbers.toSet();
+  print(numbers);
+  numbers.toList();
+  print('Convertir lista en un mapa');
+  Map<int, dynamic> newMap = Map();
+  for (var i = 1; i < numbers.length; i++) {
+    var valor = stdin.readLineSync();
+    newMap[i] = valor;
+  }
+  print(newMap);
 }
